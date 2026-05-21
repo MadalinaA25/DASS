@@ -95,16 +95,16 @@ Endpoint suplimentar in v2:
 - v1: token predictibil (`reset-<id>`), reutilizabil, fara expirare
 - v2: token random one-time, expirare 10 minute, invalidare dupa folosire
 
-## 5. Cum predai conform baremului
+## 5. Flux de validare si documentare
 
-1. Rulezi v1 si reproduci toate atacurile din `docs/poc_v1.md` (capturi complete).
-2. Rulezi v2 si executi re-test-ul din `docs/retest_v2.md` (atacul esueaza).
-3. Completezi `docs/raport_template.md` cu capturi, request/response si explicatii.
-4. Bifezi toate elementele din `docs/checklist_barem.md`.
-5. Inregistrezi clip video 5-10 minute cu identitate clara (voce + username + hostname VM).
+1. Se ruleaza v1 si se reproduc atacurile din `docs/poc_v1.md`.
+2. Se ruleaza v2 si se executa re-test-ul din `docs/retest_v2.md`.
+3. Se completeaza raportul tehnic pe baza structurii din `docs/raport_template.md`.
+4. Se verifica conformitatea livrabilelor folosind `docs/checklist_barem.md`.
+5. Se pregatesc dovezi practice (request/response, capturi VM, demonstratie video).
 
 ## 6. Observatii pentru laborator
 
-- In v2, endpoint-ul `/forgot-password` returneaza token-ul doar pentru laborator, ca sa poti demonstra fluxul fara server de email.
+- In v2, endpoint-ul `/forgot-password` returneaza token-ul doar pentru laborator, pentru demonstrarea fluxului fara server de email.
 - Pentru demo browser cu cookie `Secure`, seteaza HTTPS sau ruleaza cu `COOKIE_SECURE=0` strict pentru local dev.
 - Nu folosi acest cod in productie fara hardening suplimentar (TLS real, CSRF protection, secret management, monitoring, tests).
