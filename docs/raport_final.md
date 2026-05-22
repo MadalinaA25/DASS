@@ -6,7 +6,7 @@
 - Facultatea de Matematica si Informatica, Universitatea din Bucuresti
 - Cadru didactic: Conf. Univ. Dr. Marius Iulian Mihailescu
 - Titlu proiect: Break the Login - Atacarea si securizarea autentificarii
-- Student: Anghel Madalina
+- Student: Anghel Madalina 461
 
 ## Abstract
 
@@ -107,7 +107,7 @@ Mediul de lucru a fost pregatit intr-o masina virtuala pentru izolare, reproduci
 - Hypervisor: VirtualBox
 - OS VM: Ubuntu 24.04 LTS
 - Hostname: authx-vm
-- User VM: anghel.madalina
+- User VM: anghel.madalina.461
 - Python: 3.12
 
 ### 3.2 Instalare
@@ -558,9 +558,3 @@ Proiectul include doua implementari distincte:
 - vulnerable/ (v1)
 - fixed/ (v2)
 
-### Anexa C - Verificare finala predare
-
-- Raportul include structura completa si evidenta practica pentru scenariile demonstrate.
-- Capturile inserate documenteaza executia v1 si re-test-ul v2.
-- Codul este separat in doua implementari distincte: v1 si v2.
-- Demonstratia video acopera atacul, remedierea si validarea dupa fix.

@@ -15,6 +15,7 @@ Tehnologii:
 - `fixed/app.py` - varianta reparata
 - `docs/raport_final.md` - raportul proiectului
 - `screenshots/` - dovezi vizuale pentru demonstratii
+- link video: 
 
 ## 2. Rulare rapida
 
@@ -93,8 +94,3 @@ Endpoint suplimentar in v2:
 - v1: token predictibil (`reset-<id>`), reutilizabil, fara expirare
 - v2: token random one-time, expirare 10 minute, invalidare dupa folosire
 
-## 5. Observatii pentru laborator
-
-- In v2, endpoint-ul `/forgot-password` returneaza token-ul doar pentru laborator, pentru demonstrarea fluxului fara server de email.
-- Pentru demo browser cu cookie `Secure`, seteaza HTTPS sau ruleaza cu `COOKIE_SECURE=0` strict pentru local dev.
-- Nu folosi acest cod in productie fara hardening suplimentar (TLS real, CSRF protection, secret management, monitoring, tests).
