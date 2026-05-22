@@ -15,7 +15,7 @@ Tehnologii:
 - `fixed/app.py` - varianta reparata
 - `docs/raport_final.md` - raportul proiectului
 - `screenshots/` - dovezi vizuale pentru demonstratii
-- link video: 
+- link video: https://www.youtube.com/watch?v=3uh_iBxhx_A
 
 ## 2. Rulare rapida
 
