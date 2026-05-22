@@ -98,8 +98,6 @@ Tabelul audit_logs:
 
 Schema bazei de date a fost validata prin inspectia tabelelor in timpul rularii.
 
-![S01 - Server v1 pornit](../screenshots/S01_server_v1_started.png)
-
 ## 3. Setup mediu laborator
 
 Mediul de lucru a fost pregatit intr-o masina virtuala pentru izolare, reproducibilitate si conformitate cu baremul. In proiect au fost folosite pachete standard Python, fara dependinte externe riscante.
@@ -123,7 +121,7 @@ pip install -r vulnerable/requirements.txt
 pip install -r fixed/requirements.txt
 ```
 
-![S02 - Health check v1](../screenshots/S02_health_v1_ok.png)
+![S02 - Verificare server v1 (/health)](../screenshots/S02_health_v1_ok.png)
 
 ### 3.3 Pornire aplicatie
 
@@ -206,8 +204,6 @@ Endpoint-uri:
 
 In v2, accesul la ticket este conditionat de ownership sau rol MANAGER.
 
-![S03 - Register cu parola slaba acceptat](../screenshots/S03_poc01_weak_password_accepted.png)
-
 ## 5. Vulnerabilitati initiale (v1) - mapping cerinte 4.1-4.6
 
 ### 5.1 4.1 Password policy slab
@@ -255,8 +251,6 @@ Token predictibil, reutilizabil si fara expirare.
 
 Consecinta:
 Preluare cont la distanta daca token-ul este ghicit sau interceptat.
-
-![S04 - User enumeration prin mesaje diferite](../screenshots/S04_poc02_user_enum_response_diff.png)
 
 ## 6. Demonstrarea atacurilor (PoC)
 
@@ -503,9 +497,9 @@ token valid o singura data, apoi invalid.
 Rezultat obtinut:
 a doua utilizare returneaza Invalid or expired token.
 
-![S17 - Re-test06 reset token first use ok](../screenshots/S17_reset_token_first_use_ok.png)
+![S17 - Re-test05 reset token first use ok](../screenshots/S17_reset_token_first_use_ok.png)
 
-![S18 - Re-test06 reset token second use failed](../screenshots/S18_retest06_token_second_use_failed.png)
+![S18 - Re-test05 reset token second use failed](../screenshots/S18_retest06_token_second_use_failed.png)
 
 Concluzie re-test:
 PoC-urile initiale nu mai sunt reproductibile in aceeasi forma, ceea ce confirma eficienta fix-urilor implementate.
