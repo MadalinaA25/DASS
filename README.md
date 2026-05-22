@@ -13,10 +13,8 @@ Tehnologii:
 
 - `vulnerable/app.py` - varianta vulnerabila
 - `fixed/app.py` - varianta reparata
-- `docs/poc_v1.md` - atacuri reproductibile pe v1
-- `docs/retest_v2.md` - dovada ca atacurile nu mai functioneaza pe v2
-- `docs/raport_template.md` - template extins pentru raportul de minim 20 pagini
-- `docs/checklist_barem.md` - checklist complet pe barem
+- `docs/raport_final.md` - raportul proiectului
+- `screenshots/` - dovezi vizuale pentru demonstratii
 
 ## 2. Rulare rapida
 
@@ -95,15 +93,7 @@ Endpoint suplimentar in v2:
 - v1: token predictibil (`reset-<id>`), reutilizabil, fara expirare
 - v2: token random one-time, expirare 10 minute, invalidare dupa folosire
 
-## 5. Flux de validare si documentare
-
-1. Se ruleaza v1 si se reproduc atacurile din `docs/poc_v1.md`.
-2. Se ruleaza v2 si se executa re-test-ul din `docs/retest_v2.md`.
-3. Se completeaza raportul tehnic pe baza structurii din `docs/raport_template.md`.
-4. Se verifica conformitatea livrabilelor folosind `docs/checklist_barem.md`.
-5. Se pregatesc dovezi practice (request/response, capturi VM, demonstratie video).
-
-## 6. Observatii pentru laborator
+## 5. Observatii pentru laborator
 
 - In v2, endpoint-ul `/forgot-password` returneaza token-ul doar pentru laborator, pentru demonstrarea fluxului fara server de email.
 - Pentru demo browser cu cookie `Secure`, seteaza HTTPS sau ruleaza cu `COOKIE_SECURE=0` strict pentru local dev.
